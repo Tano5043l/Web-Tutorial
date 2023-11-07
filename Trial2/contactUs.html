@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weebs' Hub</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li class="topright"><a href="login.html">Log In</a></li>
+                <li class="topright"><a href="signUp.html">Sign Up</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <p>You can reach any of the administrators on the following</p>
+        <ul>
+            <li>ichigo@gmail.com</li>
+            <li>aster@gmail.com</li>
+            <li>deku@gmail.com</li>
+            <li>itachi@gmail.com</li>
+        </ul>
+        <p>Or through WhatsApp on the following lines</p>
+        <ul>
+            <li>+99 478797785</li>
+            <li>+233 472487784</li>
+            <li>+27 478797293</li>
+            <li>+1 2389807877</li>
+        </ul>
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "navbar";
+                }
+            }
+        </script>        
+    </body>
+</html>

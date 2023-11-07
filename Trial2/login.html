@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weebs' Hub</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="login">
+        <nav>
+            <ul class="navbar" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li class="topright"><a href="login.html">Log In</a></li>
+                <li class="topright"><a href="signUp.html">Sign Up</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <form class="login">
+            <div class="formbox">
+                <label>Username</label><br>
+                <input class="bar" type="text" id="username" placeholder="enter username"><br><br>
+                <label>Password</label><br>
+                <input class="bar" type="password" id="password" placeholder="enter password"><br>
+                <p><a href="#">Forgot password</a></p>
+                <button class="submit">Log In</button>
+                <p>Don't have an account?</p>
+                <p><a href="signUp.html">Sign up now!</a></p>
+            </div>
+        </form>
+
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "navbar";
+                }
+            }
+        </script>        
+    </body>
+</html>

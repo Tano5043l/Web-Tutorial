@@ -1,0 +1,252 @@
+/*###### Default Styles ########*/
+nav,
+head,
+footer {
+    display: block;
+}
+
+body {
+    background-image: url('../pics/1324832.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+body.signup, body.login {
+    background-image: url('../pics/1668492758_1\(1\).jpg');
+    margin: 0;
+}
+
+p {
+    color: #f00;
+}
+ul li {
+    color: #f00;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+    margin-top: 5%;
+    background-color: rgb(8, 250, 210);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+legend{
+    color: #f00;
+    font-size: 30px;
+    text-shadow: 2px 2px #00f
+}
+
+label {
+    color: #000;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.container {
+    margin: auto;
+    padding: 10% /*0% 0% 10%*/;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/*###### Nav bar ########*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+ul.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #a52a2a;
+    overflow: hidden;
+}
+
+ul.navbar li {
+    list-style: none;
+    float: left;
+}
+
+ul.navbar li.topright {
+    float: right;
+}
+
+ul.navbar li a {
+    color: #ffff00;
+    display: block;
+    text-decoration: none;
+    min-height: 14px;
+    text-transform: uppercase;
+    padding: 14px;
+}
+
+ul.navbar li a:hover {
+    background-color: #f00;
+    color: #000;
+    font-size: 20px;
+}
+
+ul.navbar li.dropdown {
+    display: none;
+}
+
+/*###### Custom styles ########*/
+
+div.box {
+    border: 1px solid #a52a2a;
+}
+
+.col-6 h1 {
+    color: #f00;
+}
+
+.col-6 p {
+    color: #ff0;
+    font-size: 20px;
+}
+.col-6 button {
+    background-color: #a52a2a;
+    color: #ff0;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.col-6 button a {
+    text-decoration: none;
+}
+
+.col-6 button a:visited{
+    color: #ff0;
+}
+
+.col-6 img {
+    width: 50%;
+    margin-left: 25%;
+}
+.col-6 .textcol {
+    margin-left: 10%;
+}
+
+div.formbox {
+    border: 2px solid #00f;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+button.submit {
+    background-color: #0f0;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20pxd;
+}
+
+input.bar {
+    width: 500px;
+}
+
+input.num {
+    width: 120px;
+}
+
+input.phone {
+    width: 200px;
+}
+
+/*###### Mobile ########*/
+
+@media screen and (max-width : 550px) {
+
+    body {
+        background-image: url('../pics/t3643EX\ \(1\).jpeg');
+    }
+
+    body.signup {
+        background-repeat: repeat;
+    }
+
+    form.signup {
+        width: 80%;
+    }
+
+    form.login {
+        width: 80%;
+    }
+
+    input.bar {
+        width: 80%;
+    }
+
+    ul.navbar li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.navbar li.dropdown {
+        display: block;
+        float: right;
+    }
+
+    ul.navbar.responsive li.dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.navbar.responsive {
+        position: relative;
+    }
+
+    ul.navbar.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.navbar.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin: 4%;
+    }
+
+    .col-6 img {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+}
+
